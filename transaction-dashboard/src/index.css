@@ -1,0 +1,116 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.header select,
+.header input {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.table-container {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.statistics-container {
+  /* display: flex; */
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.statistics-container div {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  width: 30%;
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+
+.chart-container {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .statistics-container {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .statistics-container div {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
